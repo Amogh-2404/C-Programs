@@ -6,5 +6,6 @@ int main()
     p=&a;
     printf("%d\n",&a);
     printf("%d\n",p);
+    printf("%d\n",sizeof(size_t));
     return 0;
 }
