@@ -17,8 +17,8 @@ int partition(int a[],int l,int h)
     int pivot=a[l];           //Considering the first element as the pivot
     do
     {
-        do{i++;}while(a[i]<=pivot); //Stops when it finds an element larger than or equal to the considered pivot
-        do{j--;}while(a[j]>pivot);  //Stops when it finds an element smaller than the considered pivot
+        do{i++;}while(a[i]<=pivot); //Stops when it finds an element larger than the considered pivot
+        do{j--;}while(a[j]>pivot);  //Stops when it finds an element smaller than or equal to the considered pivot
         if (i<j)
            swap(&a[i],&a[j]);      //Swapping the elements found in the loop
     } while (i<j);
@@ -38,6 +38,7 @@ void quicksort(int a[],int l,int h)
            if (a[z]<a[y])
               swap(&a[y],&a[z]);
         }
+        m++;
     }
     /*---------------------------------------*/
     if(l<h){

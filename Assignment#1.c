@@ -36,7 +36,7 @@ char pop(struct stack *st)
 }
 void push(struct stack *st,char x)
 {
-    if(st->top==(st->size))
+    if(st->top==(st->size)-1)
         printf("Stack overflow.\n");
     else{
         st->top++;
@@ -151,7 +151,7 @@ int checkParen(char *infix)
     temp.s_array = (char*)malloc(STRUCT_SIZE_2*sizeof(char));
     for(int i=0;i<STRUCT_SIZE_2;i++){
         temp.s_array[i]='n';
-    }
+    } 
     int travind = 0;
     while (infix[travind]!='\0') {
         if(infix[travind]=='('){
