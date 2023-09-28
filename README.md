@@ -7,7 +7,7 @@ Welcome to the C Programs Repository! This repository is a treasure trove of C p
 ## Table of Contents
 - [Introduction](#introduction)
 - [Program-Categories](#program-categories)
-- [Getting-Started](#gettingstarted)
+- [Getting-Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
 
